@@ -25,13 +25,13 @@
   outline: none;
 
   transition-property: box-shadow, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
-.form-subscription__input:hover,
-.form-subscription__input:focus {
-  border-color: $accent-color;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
 .form-subscription__btn {
@@ -50,12 +50,12 @@
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: box-shadow $transition-duration $transition-timing-function;
 
-.form-subscription__btn:hover,
-.form-subscription__btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .form-subscription__btn-icon {

@@ -16,15 +16,15 @@
   outline: none;
   padding-left: 42px;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: border-color $transition-duration $transition-timing-function;
 
-.modal-input:focus {
-  border-color: $accent-color;
-}
+  &:focus {
+    border-color: $accent-color;
+  }
 
-.modal-input:focus + .form-icon {
-  fill: $accent-color;
+  &:focus + .form-icon {
+    fill: $accent-color;
+  }
 }
 
 .modal-label {
@@ -53,12 +53,12 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: background-color $transition-duration $transition-timing-function;
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: $button-hover-color;
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
 }
 
 .form-field {
@@ -83,7 +83,7 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $transition-duration $transition-timing-function;
 }
 
 .form-textarea {
@@ -99,14 +99,14 @@
   letter-spacing: 0.01em;
   cursor: pointer;
   outline: none;
-}
 
-.form-textarea:focus {
-  border: 1px solid $accent-color;
-}
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 
-.form-textarea::placeholder {
-  color: $form-field-text-color;
+  &::placeholder {
+    color: $form-field-text-color;
+  }
 }
 
 .checkbox-text {
@@ -131,17 +131,17 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+  }
 }
 
 .icon {
   border: 2px solid $title-text-color;
   border-radius: 2px;
   margin-right: 7px;
-}
-
-.checkbox:checked + .icon {
-  border-color: $accent-color;
-  background-color: $accent-color;
 }
 
 .label-field {
