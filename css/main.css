@@ -301,7 +301,7 @@ img {
   margin-bottom: 50px;
 }
 
-.team-section__title {
+.team-section__info-title {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -310,7 +310,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-section__position {
+.team-section__info-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
